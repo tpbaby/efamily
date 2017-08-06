@@ -1,0 +1,287 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+body{
+    padding-top: 30px;
+}
+
+
+
+
+/*输入框*/
+.input-group{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+#basic-addon2{
+    cursor: pointer;
+}
+/*地图*/
+#weachart{
+    width: 0;
+    height: 0;
+    margin: 20px auto;
+}
+#weather{
+    width: 80%;
+    height: 80%;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+}
+#weather>div{
+    flex: 1;
+    display: flex;
+}
+#weather>div>div{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#weather>div>div>img{
+    height: 80%;
+    width: 80%;
+    max-width: 100px;
+    max-height: 100px;
+}
+@keyframes cloud{
+    0%{
+        transform: translate(0px);
+    }
+    50%{
+        transform: translate(-5px);
+    }
+    100%{
+        transform: translate(0px);
+    }
+}
+@keyframes flash{
+    from{
+        opacity: 1;
+    }to{
+        opacity: 0;
+    }
+}
+@keyframes scale{
+    0%{
+        transform: scale(0.8);
+    }50%{
+        transform: scale(1);
+    }100%{
+        transform: scale(0.8);
+    }
+}
+@keyframes scale2{
+    from{
+        transform: scale(0.8);
+    }5to{
+        transform: scale(1);
+    }
+}
+@keyframes hurricane{
+    from{
+        transform: rotateY(0deg)
+    }to{
+        transform: rotateY(360deg);
+    }
+}
+@keyframes moon{
+    0%{
+        transform: rotate(0deg);
+    }50%{
+        transform: rotate(40deg);
+    }100%{
+        transform: rotate(0deg);
+    }
+}
+@keyframes sun{
+    from{
+        transform: rotate(0deg);
+    }to{
+        transform: rotate(360deg);
+    }
+}
+.w1,.w4{
+    animation: cloud 3s infinite;
+    -webkit-animation: cloud 3s infinite;
+    -moz-animation: cloud 3s;
+    -o-animation: cloud 3s infinite;
+}
+.w2{
+    animation: cloud 5s infinite;
+    -webkit-animation: cloud 5s infinite;
+    -moz-animation: cloud 5s;
+    -o-animation: cloud 5s infinite;
+}
+.w5,.w19{
+    animation: sun 8s infinite linear;
+    -webkit-animation: sun 8s infinite linear;
+    -moz-animation: sun 8s infinite linear;
+    -o-animation: sun 8s infinite linear;
+}
+.w6,.w17,.w20{
+    animation: scale 3s infinite linear;
+    -webkit-animation: scale 3s infinite linear;
+    -moz-animation: scale 3s infinite linear;
+    -o-animation: scale 3s infinite linear;
+}
+.w7{
+    animation: flash 1.5s infinite linear;
+    -webkit-animation: flash 1.5s infinite linear;
+    -moz-animation: flash 1.5s infinite linear;
+    -o-animation: flash 1.5s infinite linear;
+}
+.w8,.w18{
+    animation: scale 4s infinite linear;
+    -webkit-animation: scale 4s infinite linear;
+    -moz-animation: scale 4s infinite linear;
+    -o-animation: scale 4s infinite linear;
+}
+.w9{
+    animation: cloud 4s infinite;
+    -webkit-animation: cloud 4s infinite;
+    -moz-animation: cloud 4s;
+    -o-animation: cloud 4s infinite;
+}
+.w10{
+    animation: scale2 2s infinite linear;
+    -webkit-animation: scale2 2s infinite linear;
+    -moz-animation: scale2 2s infinite linear;
+    -o-animation: scale2 2s infinite linear;
+}
+.w11{
+    animation: hurricane 2s infinite linear;
+    -webkit-animation: hurricane 2s infinite linear;
+    -moz-animation: hurricane 2s infinite linear;
+    -o-animation: hurricane 2s infinite linear;
+}
+.w12{
+    animation: sun 12s infinite linear;
+    -webkit-animation: sun 12s infinite linear;
+    -moz-animation: sun 12s infinite linear;
+    -o-animation: sun 12s infinite linear;
+}
+.w13{
+    animation: moon 3s infinite linear;
+    -webkit-animation: moon 3s infinite linear;
+    -moz-animation: moon 3s infinite linear;
+    -o-animation: moon 3s infinite linear;
+}
+.w15{
+    animation: cloud 3s infinite;
+    -webkit-animation: cloud 3s infinite;
+    -moz-animation: cloud 3s;
+    -o-animation: cloud 3s infinite;
+}
+.w16{
+    animation: cloud 4s infinite;
+    -webkit-animation: cloud 4s infinite;
+    -moz-animation: cloud 4s;
+    -o-animation: cloud 4s infinite;
+}
+
+/*移动端*/
+/*移动端*/
+#min_logo{
+    width: 306px;
+    height: 100px;
+    background: url(../images/min_weather.jpg);
+    font-size: 30px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+#min_index{
+    margin-top: 120px;
+    text-align: center;
+}
+#min_index>img{
+    box-shadow: 10px 10px 20px #ccc;
+    border-radius: 50%;
+}
+.min_tab{
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+}
+.min_tabone{
+    /*background: #89dee3;*/
+    background-image: url(../images/w.jpg);
+    background-size: 100% 100%;
+    padding-bottom: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.msgone{
+    display: inline-block;
+}
+.msgone>span:nth-child(1){
+    font-size: 20vw;
+}
+.msgone>span:nth-child(2){
+    display: inline-block;
+    margin-left: 15px;
+}
+.min_tabone>img{
+    box-shadow: 0 0 15px #13597b;
+    border-radius: 50%;
+}
+
+.min_tabs{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 15px;
+    font-size: 4.5vw;
+}
+.min_tabs>img{
+    width: 30px;
+    height: 30px;
+}
+
+/*媒体查询*/
+@media screen and (max-width: 768px) {
+    .input-group{
+        width: 90%;
+        margin: 30px auto;
+    }
+    #weather{
+        display: none;
+    }
+    #weachart{
+        display: none;
+    }
+    
+     .nav-position{
+        display: none;
+    }
+    
+
+    /*移动端的小导航栏*/
+    .mini-nav{
+        background-color:  #5dabf0;
+        height: 40px;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        z-index: 2000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+@media screen and (min-width: 768px){
+    #min_index,#min_logo,.min_tab{
+        display: none;
+    }
+}

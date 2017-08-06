@@ -1,0 +1,325 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: "幼圆";
+/*	color: black;*/
+	font-size: 14px;/*
+	color: darkslategray;*/
+	text-align: center;
+}
+
+
+/*移动端的小导航栏*/
+/*header,footer{
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "幼圆";
+}
+
+header{
+    background-color:  #6666CC;
+    top: 0;
+}
+footer{
+    background-color:  #fff;
+    border-top: 1px solid #ddd;
+    bottom: 0;
+}
+
+
+footer svg.iconstyle{
+    width: 25%;
+    height: 60%;
+    color: gray;
+    height: 20px;
+}
+
+footer svg.svgactive{
+    color:#6666CC;
+}*/
+
+article{
+   /* width: 100%;
+    height: 100%;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;*/
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+    height: auto;
+}
+
+.swiper-container{
+      position: relative;
+      width: 100%;
+      height: auto;
+      z-index: 1;
+      background-color: gray;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+   
+}
+
+.swiper-slide{
+/*  flex-shrink:弹性盒子的收缩比例         */
+    -webkit-flex-shrink: 0;
+    -ms-flex: 0 0 auto;
+    flex-shrink: 0;
+    width: 100%;
+    /*height: 100%;*/
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+}
+
+.page1{
+    height: 900px;
+    background-color: #ddd;
+    
+}
+
+.page2{
+    height:600px;
+    background-color: #ddd;
+}
+
+.page3{
+    height: 600px;
+    background-color: lightblue;
+}
+
+
+.page4{
+    height: 1000px;
+    background-color: lightcoral;
+}
+
+
+/*首页图片轮播*/
+.article-showimg{
+    width: 100%;
+    height: 150px;/*
+    margin-top: 5px;*/
+	background-image: url(../images/main/bg1.jpg);
+	background-size: 100% 100%;
+	-webkit-background-size:100% 100%;
+	background-repeat: no-repeat;
+    animation-name: changebg;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-iteration-count:infinite;
+}
+
+
+/*功能小图标*/
+.func-icon{
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: white;
+
+}
+
+.func-icon>a{
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    color: black;
+}
+
+.func-icon>a>img{
+    display: inline-block;
+    width: 50%;
+    padding: 25%;
+}
+
+.func-icon>a>div{
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    top: -10px;
+    font-size: 12px;
+    width: 100%;
+/*    width: 100%;*/
+}
+
+/*开心一笑*/
+.article-smile{
+    width: 100%;
+    height:220px;
+    background-color: white;
+    margin-top: 4%;
+
+}
+
+
+
+
+
+.smail-msg{
+    text-align: left;
+    margin-left: 20px;
+    padding-top: 8px;
+    margin-top: 5px;
+    position: absolute;
+    left: 0px;
+    display: inline-block;
+}
+
+.faceimg{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 5px;
+}
+
+.smail-msg>span{
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+.smail-change{
+    display: inline-block;
+    width: auto;
+    height: 20%;
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 10px;
+    color: gray;
+    position: absolute;
+    right: 0px;
+
+}
+
+.smail-change>span{
+    
+    /*border: 1px solid #ddd;*/
+    background-color: white;
+    padding: 4px;
+    font-size: 0.1vw;
+    border-radius: 8px;
+    
+}
+
+.smiletxt-box{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    top: 15%;
+/*    border-radius: 4px;
+    box-shadow: 2px 0px 10px lightgray,
+                -2px 0px 10px lightgray,
+                0px 2px 10px lightgray,
+                0px -2px 10px lightgray;*/
+    background-image: url(../images/main/weather/bg1.jpg);
+    background-size: 100% 100%;
+    font-size: 18px;
+}
+
+.smail-txt{
+    clear: both;
+    width: 80%;
+    height: 80%;
+    font-family: "华文琥珀";
+    color: darkslategray;
+    position: absolute;
+    top: 20px;
+    margin-left: 10%;
+    line-height: 18px;
+    /*font-size: 0.1vw;*/
+    
+}
+
+/*天气*/
+.weather-box{
+    border:1px solid #ddd;
+    width: 90%;
+    height: 70%;
+    margin-left: 5%;
+    position: relative;
+/*    border-radius: 4px;*/
+    top: 20%;
+    /*box-shadow: 2px 0px 5px lightgray,
+                -2px 0px 5px lightgray,
+                0px 2px 5px lightgray,
+                0px -2px 5px lightgray;*/
+    background-image: url(../images/main/weather/duoyun.jpg);
+    background-size: 100% 100%;
+}
+
+.weather-box>div{
+    text-align: left;
+    margin-left: 20px;
+    padding: 8px;
+    color: white;
+}
+
+#cur{
+    color: white;
+    font-size: 50px;
+}
+
+/*.weather-box>div>span*/
+
+
+
+
+@keyframes changebg{
+    0% {
+         -webkit-filter:blur(3px);
+        opacity: 0.8;
+        background-image: url('../images/main/bg1.jpg');
+    }
+    20% {
+        opacity: 0.8;
+         -webkit-filter:blur(0);
+        background-image: url('../images/main/bg1.jpg');
+    }
+    40% {
+        opacity: 0.8;
+         -webkit-filter:blur(3px);
+        background-image: url('../images/main/bg2.jpg');
+    }
+    60% {
+        opacity: 0.8;
+         -webkit-filter:blur(0);
+        background-image: url('../images/main/bg2.jpg');
+    }
+    80% {
+        opacity: 0.8;
+         -webkit-filter:blur(3px);
+        background-image: url('../images/main/bg4.jpg');
+    }
+    100% {
+        opacity: 0.8;
+         -webkit-filter:blur(0);
+        background-image: url('../images/main/bg4.jpg');
+    }
+}
+
+
+
+
+
+
+

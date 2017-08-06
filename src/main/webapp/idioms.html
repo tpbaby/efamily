@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>成语接龙</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/idioms.css">
+    <link rel="stylesheet" href="css/public.css">
+    
+    <!--使IE9以下版本浏览器兼容html5新增的标签-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <!--使IE6、7、8版本浏览器兼容css3样式而引入的代码-->
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    
+    
+</head>
+<body>
+    <!--背景图片-->
+    <div id="bbg">
+        <img width="100%" class="bg" src="images/idioms_bg.jpg" alt="">
+    </div>
+    <!--导航栏-->
+   <header>
+       <nav class="navbar  navbar-default navbar-fixed-top" role="navigation">
+            <div class="navigation">     
+                       <!--给图片一个超链接-->
+                        <div class="logo">
+                            <a href="index_xz.html"><img src="images/main/index-xz/logo.png" class="logoimg1"></a>
+                        </div>
+                    <div class="navbar-collapse collapse">
+                        <div class="menu">
+                            <ul class="nav nav-tabs " role="tablist">
+                                <li role="presentation"><a href="index_xz.html"  >首&nbsp;&nbsp;页</a>
+                                </li>
+                                <li role="presentation"><a href="videolist.html">课程</a>
+                                </li>
+                                <li role="presentation"><a href="news.html">新闻</a>
+                                
+                                </li>
+                                <li role="presentation"><a href="twelve.html">星座</a>
+                                </li>
+                                <li role="presentation"><a href="loadmusic.html">音乐</a>
+                                </li>
+                                <li role="presentation"><a href="weather.html">天气</a>
+                                </li>
+                                <li role="presentation"><a href="idioms.html" class="active">成语接龙</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+       
+        <div class="mini-nav">
+           
+            <a href="index-xx.html">
+                <button type="button" class="btn btn-default btn-smallicon" id="btn-back" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                </button> 
+            </a>
+            
+            <div class="mini-title">成语接龙</div>
+            
+        </div>
+    </header>
+   
+    <!--成语接龙图片-->
+    <article>
+        <img class="head" src="images/idioms_head.png">
+    </article>
+    
+    <!--显示成语-->
+    <article>
+        <div class="over"></div>
+        <div class="content">
+            <img class="dragon" src="images/2tail.png">
+            <span class="idioms"></span>
+            <img class="dragon" src="images/2head.png">
+        </div>
+        <!--提交按钮-->
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="It's your turn" aria-describedby="basic-addon2">
+            <span class="input-group-addon" id="basic-addon2">接龙</span>
+        </div>
+    </article>
+   
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/idioms.js"></script>
+</body>
+</html>

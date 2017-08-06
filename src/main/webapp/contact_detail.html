@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>详细</title>
+    <link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="css/view_contact_detail.css"/>
+</head>
+<body>
+<div class="container ">
+    <header class="col-sm-12 navbar-fixed-top">
+        <!--导航：返回-->
+        <a href="view_contacts.html">
+            <span class="glyphicon glyphicon-menu-left color-white" aria-hidden="true"></span>
+        </a>
+        <span class="float-right-no glyphicon glyphicon-option-vertical color-white" aria-hidden="true" data-toggle="modal" data-target="#myModal"></span>
+    </header>
+    <div class="content-header">
+        <div class="content-photo">
+            <img class="icon-photo" src="images/user3.jpg"/>
+            <!--用户名-->
+            <span id="username" class="icon-text">王小东</span>
+        </div>
+    </div>
+    <div class="row text-center color-light-gray margin-top-10 ">
+        <div class="col-xs-4">
+            <span class="glyphicon glyphicon-share align-center" aria-hidden="true"></span>
+            <p>Share</p>
+        </div>
+        <span class="line-gap"></span>
+        <div class="col-xs-4">
+            <span class="glyphicon glyphicon-dashboard align-center" aria-hidden="true"></span>
+            <p>Call history</p>
+        </div>
+        <span class="line-gap"></span>
+        <div class="col-xs-4">
+            <span class="glyphicon glyphicon-heart-empty align-center" aria-hidden="true"></span>
+            <p>Favorite</p>
+        </div>
+    </div>
+    <ul class="list-group">
+        <li class="list-group-item line-height-50" onclick="callphone()">
+            <span class="badge icon-on-right"><img src="images/icon/icon_sms.png"> </span>
+            <!--电话号码-->
+            <span id="phone">177 6456 9769</span><br>
+            <span class="text-little">Mobile | Hangzhou.Zhejiang</span>
+        </li>
+
+
+        <li class="list-group-item line-height-50">
+            <span class="badge icon-on-right"><img src="images/icon/icon_weibo.png"> </span>
+            <!--新浪微博-->
+            <span id="sinaweibo">cc陈cuicui </span><br>
+            <span class="text-little">Sina Weibo</span>
+        </li>
+        <li class="list-group-item line-height-50">
+            <span class="badge icon-on-right"><img src="images/icon/icon_wexin.png"> </span>
+            <span>We Chat</span><br>
+            <span id="weixin" class="text-little">katey2658</span>
+        </li>
+        <li class="list-group-item line-height-50">
+            <span class="badge icon-on-right"><img src="images/icon/icon_qq.png"> </span>
+            <span>QQ</span><br>
+            <span id="qq" class="text-little">1145690747</span>
+        </li>
+        <li class="list-group-item line-height-50">
+            <!--家庭地址-->
+            <span id="home">浙江 绍兴</span> <br>
+            <span class="text-little">Home</span>
+        </li>
+        <li class="list-group-item line-height-50">
+            <!--生日-->
+            <span id="birth" class="birth">61/14/96 </span><br>
+            <span class="text-little">Birthday</span>
+
+        </li>
+    </ul>
+    <ul class="list-group">
+        <li class="list-group-item line-height-50">
+            <span class="badge icon-to-right"> <span class="glyphicon glyphicon-menu-right "></span> </span>
+           Default ringtone
+        </li>
+        <li class="list-group-item line-height-50">
+            <span class="badge icon-to-right"> <span class="glyphicon glyphicon-menu-right "></span> </span>
+           QR code
+        </li>
+    </ul>
+    <!--浮动按钮-->
+    <a>
+
+    </a>
+    <div class="navbar-fixed-bottom">
+        <div id="add" class="floating-button float-right icon-center">
+            <span class="glyphicon glyphicon-edit color-white align-center" aria-hidden="true"></span>
+        </div>
+    </div>
+    <div class="block-height100"></div>
+</div>
+
+
+<!--弹出框-->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="gridSystemModalLabel">
+    <div class="modal-dialog no-margin-padding model-alpha" role="document">
+        <div class="modal-content no-border-radius">
+            <div class="modal-header">
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span ria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body ">
+                <ul class="list-group list-unstyled">
+                    <li class="text-left border-bottom">Place on Home screen</li>
+                    <li class="text-left border-bottom">Voicemail not in use</li>
+                    <li class="text-left border-bottom">Delete contact</li>
+                    <li class="text-left border-bottom">Block</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="js/view_contact_detail.js"></script>                                                                                                                                   `
+<script>
+    initPage();
+    var wid = window.innerWidth;
+    $(".content-header").css({"width":wid+"px"});
+</script>
+</body>
+</html>

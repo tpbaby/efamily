@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.busyzero.efamily.repository.VideoRepository">
+    <select id="getVideoById" resultType="video">
+        SELECT video_id,course_id,video_name,video_link
+        FROM video
+        WHERE video_id=#{videoId}
+    </select>
+</mapper>

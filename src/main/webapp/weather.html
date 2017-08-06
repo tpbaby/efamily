@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>天气预报</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <!--使IE9以下版本浏览器兼容html5新增的标签-->
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <!--使IE6、7、8版本浏览器兼容css3样式而引入的代码-->
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    
+    <link rel="stylesheet" href="css/public.css">
+</head>
+<body>
+   
+   <!--头部导航栏-->
+    <header>
+       <nav class="navbar  navbar-default navbar-fixed-top" role="navigation">
+            <div class="navigation">     
+                       <!--给图片一个超链接-->
+                        <div class="logo">
+                            <a href="index_xz.html"><img src="images/main/index-xz/logo.png" class="logoimg1"></a>
+                        </div>
+                    <div class="navbar-collapse collapse">
+                        <div class="menu">
+                            <ul class="nav nav-tabs " role="tablist">
+                                <li role="presentation"><a href="index_xz.html"  >首&nbsp;&nbsp;页</a>
+                                </li>
+                                <li role="presentation"><a href="videolist.html">课程</a>
+                                </li>
+                                <li role="presentation"><a href="news.html">新闻</a>
+                                
+                                </li>
+                                <li role="presentation"><a href="twelve.html">星座</a>
+                                </li>
+                                <li role="presentation"><a href="loadmusic.html">音乐</a>
+                                </li>
+                                <li role="presentation"><a href="weather.html" class="active">天气</a>
+                                </li>
+                                <li role="presentation"><a href="idioms.html">成语接龙</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+           <!--aria-label控件里面不包含任何文本，-->
+           <!--返回按钮-->
+           
+        <div class="mini-nav">
+           
+            <a href="index-xx.html">
+                <button type="button" class="btn btn-default btn-smallicon" id="btn-back" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                </button> 
+            </a>
+            
+            <div class="mini-title">天气</div>
+            
+        </div>
+    </header>
+   
+    <!--移动端 天气查询-->
+    <div id="min_logo"></div>
+    <!--城市名输入框-->
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="city name" aria-describedby="basic-addon2">
+      <span class="input-group-addon" id="basic-addon2">查询</span>
+    </div>
+    <!--移动端 天气卡片-->
+    <div class="min_tab"></div>
+    <!--移动端 首页-->
+    <div id="min_index"><img src="images/min_index.png" alt=""></div>
+    <!--PC端 天气图标-->
+    <div id="weather">
+        <div>
+            <div><img width="100%" class="w1" src="images/weather/w1.png"></div>
+            <div><img width="100%" class="w2" src="images/weather/w2.png"></div>
+            <div><img width="100%" class="w" src="images/weather/w3.png"></div>
+            <div><img width="100%" class="w4" src="images/weather/w4.png"></div>
+            <div><img width="100%" class="w5" src="images/weather/w5.png"></div>
+        </div>
+        <div>
+            <div><img width="100%" class="w6" src="images/weather/w6.png"></div>
+            <div><img width="100%" class="w7" src="images/weather/w7.png"></div>
+            <div><img width="100%" class="w8" src="images/weather/w8.png"></div>
+            <div><img width="100%" class="w9" src="images/weather/w9.png"></div>
+            <div><img width="100%" class="w10" src="images/weather/w10.png"></div>
+        </div>
+        <div>
+            <div><img width="100%" class="w11" src="images/weather/w11.png"></div>
+            <div><img width="100%" class="w12" src="images/weather/w12.png"></div>
+            <div><img width="100%" class="w13" src="images/weather/w13.png"></div>
+            <div><img width="100%" class="w" src="images/weather/w14.png"></div>
+            <div><img width="100%" class="w15" src="images/weather/w15.png"></div>
+        </div>
+        <div>
+            <div><img width="100%" class="w16" src="images/weather/w16.png"></div>
+            <div><img width="100%" class="w17" src="images/weather/w17.png"></div>
+            <div><img width="100%" class="w18" src="images/weather/w18.png"></div>
+            <div><img width="100%" class="w19" src="images/weather/w19.png"></div>
+            <div><img width="100%" class="w20" src="images/weather/w20.png"></div>
+        </div>
+    </div>
+    <!--PC端 百度报表-->
+    <div id="weachart"></div>
+    
+    <script src="js/echart/echarts.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>

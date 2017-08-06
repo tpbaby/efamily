@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐列表</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>视频列表</title>
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/videolist.css">    
+    <link rel="stylesheet" href="css/public.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+  <!--头部导航栏-->
+    <header>
+      <nav class="navbar  navbar-default navbar-fixed-top" role="navigation">
+            <div class="navigation">     
+                       <!--给图片一个超链接-->
+                        <div class="logo">
+                            <a href="index_xz.html"><img src="images/main/index-xz/logo.png" class="logoimg1"></a>
+                            
+                        </div>
+                    <div class="navbar-collapse collapse">
+                        <div class="menu">
+                            <ul class="nav nav-tabs " role="tablist">
+                                <li role="presentation"><a href="index_xz.html"  >首&nbsp;&nbsp;页</a>
+                                </li>
+                                <li role="presentation"><a href="videolist.html" class="active">课程</a>
+                                </li>
+                                <li role="presentation"><a href="news.html">新闻</a>
+                                
+                                </li>
+                                <li role="presentation"><a href="twelve.html">星座</a>
+                                </li>
+                                <li role="presentation"><a href="loadmusic.html">音乐</a>
+                                </li>
+                                <li role="presentation"><a href="weather.html">天气</a>
+                                </li>
+                                <li role="presentation"><a href="idioms.html">成语接龙</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+           <!--aria-label控件里面不包含任何文本，-->
+           <!--返回按钮-->
+           
+        <div class="mini-nav">
+           
+            <a href="index-xx.html">
+                <button type="button" class="btn btn-default btn-smallicon" id="btn-back" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                </button> 
+            </a>
+            
+            <div class="mini-title">学习天堂</div>
+            
+            <button type="button" class="btn btn-default btn-smallicon" id="btn-show" aria-label="Left Align">
+                <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+            </button>
+        </div>
+    </header>
+    <!--身体部分-->
+    <article>
+       <!--视频分类-->
+        <div class="video-catedory">
+            <ul id="list-class">
+                <li class="clickshow" role="1000">javascript 入门</li>
+                <li role="1001">jquery 入门</li>
+                <li role="js2">javascript 高级进阶</li>
+                <li role="react">前端重构</li>
+                <li role="bootstrap">Bootstrap</li>
+                <li role="jquery2">jquery实战课程</li>
+                <li role="vue">Vue 入门</li>
+                <li role="node">Node 入门</li>
+                <li role="angular">Angular 入门</li>
+            </ul>
+        </div>
+        <!--视频列表-->
+        <div class="video-list">
+            <!--标题-->
+            <div class="class-title">课程表
+            </div>
+            <div class="class-msg">
+               <!--课程表-->
+                <div class="clas-img">
+                    <img src="images/load.jpg" id="class-img">
+                </div>
+                <!--课程详细资料-->
+                <div class="class-intruduce">
+                   <div class="class-items">
+                       <span>课程名：</span>
+                        <span id="class-name"></span>
+                   </div>
+                   
+                   <div class="class-items">
+                       <span>讲师：</span>
+                        <span id="class-author"></span>
+                   </div>
+                   
+                   <div class="class-items">
+                       <span>课程章节数：</span>
+                        <span id="class-num"></span>
+                   </div>
+                </div>
+            </div>
+            
+            <!--课程具体章节-->
+            <div class="class-items-msg">
+                <div class="peritem-msg">课程如下:</div>
+                <div class="peritem-box" id="peritem-box">
+                      <ul id='videolist'>
+                      </ul>
+                </div>
+            </div>
+            
+        </div>
+    </article>
+    
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/videolist.js"></script>
+<script>
+    
+    
+</script>
+</html>

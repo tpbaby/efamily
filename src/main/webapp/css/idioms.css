@@ -1,0 +1,137 @@
+html,body{
+    height: 100%;
+    font-family: "Microsoft Yahei";
+}
+
+
+
+
+
+article{
+    text-align: center;
+}
+.head{
+    width: 65%;
+    margin-top: 60px;
+}
+/*导航end*/
+
+.bg{
+    height: 80%;
+    position: absolute;
+    z-index: -1;
+}
+
+/*显示成语start*/
+.over{
+    width: 65%;
+    height: 450px;
+    position: absolute;
+    margin: 0 auto;
+    z-index: 2;
+    left: 17.5%;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    display: none;
+    line-height: 500px;
+    border-radius: 5px;
+}
+.over>span:first-child{
+    font-size: 6vw;
+}
+/*再来一次*/
+.restart{
+    font-size:5.5vw;
+}
+.restart:hover{
+    color: red;
+}
+.content{
+    width: 65%;
+    min-height: 450px;
+    margin: 0 auto;
+    background: #f3f3f3;
+    text-align: left;
+    font-size: 1.4vw;
+    padding: 0 10px;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+.dragon{
+    vertical-align: bottom;
+    width: 7vw;
+}
+.idioms{
+    height: 25px;
+    background: #ec2522;
+    cursor: pointer;
+    color: #fff;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+/*提交按钮*/
+.input-group{
+    width: 65%;
+    height: auto;
+    margin: 20px auto 100px auto;
+}
+.form-control{
+    outline: none;
+}
+.input-group-addon{
+    cursor: pointer;
+    outline: none;
+}
+/*显示成语end*/
+
+
+/*媒体查询*/
+@media screen and (max-width: 768px) {
+    .dragon{
+        width: 12vw;
+    }
+    .head,.content,.input-group{
+        width: 85%;
+    }
+    .over{
+        width: 85%;
+        left: 7.55%;
+    }
+    #bbg{
+       /* position: fixed;*/
+    }
+    .over>span:first-child{
+        font-size: 6vw;
+    }
+    /*再来一次*/
+    .restart{
+        font-size: 5.5vw;
+    }
+    
+    .nav-position{
+        display: none;
+    }
+    
+
+    /*移动端的小导航栏*/
+    .mini-nav{
+        background-color:  #5dabf0;
+        height: 40px;
+        position: fixed;
+        width: 100%;
+        z-index: 2000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .dragon{
+        width: 7vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+}

@@ -1,0 +1,120 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>更新或者修改</title>
+    <link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="css/view_contact_detail.css"/>
+</head>
+<body class="color-gray-white">
+<div class="fixed-header line-height-50 row">
+    <div class="col-xs-2">
+        <button class="btn-cancel">Cancel</button>
+    </div>
+    <span class="col-xs-8">Save to Account</span>
+    <div class="col-xs-2">
+        <button class="btn-ok col-xs-2">OK</button>
+    </div>
+</div>
+<div class="margin-top-60">
+    <div class="header-photo">
+        <img class=" " src="images/user_photo.png"/>
+    </div>
+
+    <div class="edit-group">
+        <input class="edit-group-item" type="text" placeholder="Name" name="name"/>
+        <input class="edit-group-item" type="text" placeholder="Company" name="company"/>
+        <input class="edit-group-item no-border-bottom" type="title" placeholder="Title" name="title"/>
+    </div>
+
+    <div class="edit-group row">
+        <div class="col-xs-4">
+            <span id="phone-type">Mobile</span>
+            <span></span>
+        </div>
+        <input class="col-xs-8" type="text" placeholder="Phone" name="phone"/>
+    </div>
+
+    <div class="edit-group row">
+        <div class="col-xs-4">
+            <span id="email-type">Work</span>
+            <span></span>
+        </div>
+        <input class="col-xs-8" type="text" placeholder="Email" name="email"/>
+    </div>
+</div>
+
+<button class="btn-another-fields" data-toggle="modal" data-target="#model-phone">Add another field</button>
+
+
+<!--弹出框 Phone-->
+<div id="model-phone" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <h4 class="line-height-50 icon-center margin-vertical10">Phone</h4>
+           <div class="line-height-50 gray-line-on-top row icon-center">
+               <span class="glyphicon glyphicon-chevron-right col-xs-1 icon-center"></span>
+               <span class="col-xs-2">Mobile</span>
+           </div>
+            <div class="line-height-50 gray-line-on-top row icon-center">
+                <span class="glyphicon glyphicon-chevron-right col-xs-1 icon-center"></span>
+                <span class="col-xs-2">Work</span>
+            </div>
+
+            <div class="line-height-50 gray-line-on-top row icon-center">
+                <span class="glyphicon glyphicon-chevron-right col-xs-1 icon-center"></span>
+                <span class="col-xs-2">Home</span>
+            </div>
+            <div class="line-height-50 gray-line-on-top row icon-center">
+                <span class="glyphicon glyphicon-chevron-right col-xs-1 icon-center"></span>
+                <span class="col-xs-2">Main</span>
+            </div>
+            <div class="line-height-50 gray-line-on-top row icon-center">
+                <span class="glyphicon glyphicon-chevron-right col-xs-1 icon-center"></span>
+                <span class="col-xs-3">Work Fax</span>
+            </div>
+            <div class="line-height-50 gray-line-on-top row icon-center">
+                <span class="glyphicon glyphicon-chevron-right col-xs-1 icon-center"></span>
+                <span class="col-xs-3">Home Fax</span>
+            </div>
+            <div class="line-height-50 gray-line-on-top row icon-center">
+                <span class="glyphicon glyphicon-chevron-right col-xs-1 icon-center"></span>
+                <span class="col-xs-2">Paper</span>
+            </div>
+            <div class="line-height-50 gray-line-on-top row icon-center">
+                <span class="glyphicon glyphicon-chevron-right col-xs-1 icon-center"></span>
+                <span class="col-xs-2">Other</span>
+            </div>
+            <div class="line-height-50 gray-line-on-top row icon-center">
+                <span class="glyphicon glyphicon-chevron-right col-xs-1 icon-center"></span>
+                <span class="col-xs-2">Custom</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--弹出框 Email-->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <h5 class="line-height-50 text-center margin-vertical10">Phone</h5>
+            <div class="line-height-50 gray-line-on-top row icon-center">
+                <span class="glyphicon glyphicon-chevron-right col-xs-1 icon-center"></span>
+                <span class="col-xs-2">Work</span>
+            </div>
+
+            <div class="line-height-50 gray-line-on-top row icon-center">
+                <span class="glyphicon glyphicon-chevron-right col-xs-1 icon-center"></span>
+                <span class="col-xs-2">Home</span>
+            </div>
+            <div class="line-height-50 gray-line-on-top row icon-center">
+                <span class="glyphicon glyphicon-chevron-right col-xs-1 icon-center"></span>
+                <span class="col-xs-2">Custom</span>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</body>
+</html>>

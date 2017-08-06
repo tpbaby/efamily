@@ -1,0 +1,349 @@
+
+/*==================================
+                头部
+=====================================*/
+header{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: fixed;
+    border-bottom: 1px solid white;
+    z-index: 2;
+    /*opacity: 0.1*/
+}
+
+header div{
+    height: 50px;
+    display: inline-block;
+    position: absolute;
+}
+
+/*-------------------导航栏左侧的ul--------------------*/
+
+header ul li{
+    list-style: none;
+    float: left;
+    width: auto;
+    height: 50px;
+    background-color: black;
+    color: gray;
+}
+
+header .nav_show ul{
+    /*margin-left: -30px;*/
+}
+
+header .nav_show ul li:nth-child(1){
+    text-align: center;
+    font-size: 16px;
+    line-height: 60px;
+}
+
+
+header .nav_show ul li:nth-child(1):hover{
+    cursor: pointer;
+    color: white;
+}
+
+header .nav_show ul li:nth-child(2){
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    line-height: 60px;    
+}
+
+header .nav_show ul li:nth-child(2) span{
+    font-size: 16px;
+    color:#ddd;
+}
+
+header .nav_show ul li:nth-child(2) em{
+    padding-left: 5px;
+    font-style: normal;
+    font-size: 12px;
+}
+
+ /*=================================
+   播放音乐部分
+===================================*/
+
+section{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    position: fixed;
+    margin-top: 50px;
+}
+
+.video_box{
+    margin: 0 auto 40px auto;
+    width: 80%;
+    height: 100%;
+    background-color: black;
+
+}
+
+.video_box video{
+    width: 100%;
+    height: 94%;
+}
+
+.contrels{
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+}
+
+.controls2{
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    position: absolute;
+    bottom: 0px;
+    z-index: 300;
+    display: none;
+}
+
+.contrels div{
+    display: inline-block;
+}
+
+.play_icon{
+    width: 40px;
+    height: 40px;
+
+    color: red;
+    text-align: center;
+    background: url(../images/video/control.png) no-repeat 0 6px;
+
+}
+
+.paused{
+    background: url(../images/video/control.png) no-repeat 0 -26.5px;
+}
+
+.play_time{
+    margin-left: 10px;
+    margin-top: 10px;
+    background-color: black;
+    position: absolute;
+    left: 40px;
+    top: 15px;
+    line-height: 20px;
+
+}
+
+.play_time span{
+    font-size: 14px;
+    color: white;
+}
+
+.func_btn{
+    width: auto;
+    height: 40px;
+    background-color:black;
+    position: absolute;
+    right: 5px;
+    color: gray;
+    font-size: 20px;
+    z-index: 200;
+    /*padding-right: 0px;*/
+
+}
+
+.func_btn div:not([class="volume"]){
+    width: 30px;
+    height: 30px;
+}
+
+.func_btn div{
+    margin-top: 10px;
+    /*margin-right: 0px;
+    margin-left: 0px;*/
+    line-height: 40px;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+
+.func_btn div.btn:hover{
+
+    color: red;
+    cursor: pointer;
+}
+
+
+
+
+
+/*最大音量*/
+.func_btn div.sound{
+	background:url(../images/video/control.png) no-repeat -88px -30px;
+	border:none;
+	float:right;
+}
+
+/*小音量*/
+.func_btn div.sound2{
+	background:url(../images/video/control.png) no-repeat -88px -60px !important;
+}
+
+/*没有音量*/
+.func_btn div.muted{
+	background:url(../images/video/control.png) no-repeat -88px 0 !important;
+}
+        
+.func_btn div.btnFS{
+	background:url(../images/video/control.png) no-repeat -44px 0;
+	float:right;
+}
+
+.func_btn div.sudu{
+    width: 30px;
+    height: 22px;
+    background-color: darkgray;
+    border-radius: 5px;
+    float: right;
+    margin-top: 16px;
+    padding-right: 35px;
+/*
+    margin-left: 10px;
+    margin-right: 5px;
+*/
+    font-size: 14px;
+    line-height: 11px;
+    color: white;
+}
+
+.func_btn div.sudu:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.func_btn div.sudubox{
+    width: 45px;
+    height: 50px;
+    background-color: darkgrey;
+    border-radius: 5px;
+    position: absolute;
+    top: -50px;
+    right: 43px;
+    z-index: 30;
+    font-size: 14px;
+    text-align: center;
+    line-height:2px;
+    display: none;
+}
+
+.func_btn div.sudubox>.suduch_box{
+    color: white;
+    width: 44px;
+    height: 22px;
+    margin:0;
+    margin-left: -10px;
+    margin-top: 3px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.func_btn div.sudubox>.suduch_box:hover{
+    color: red;
+}
+
+.func_btn div.sudubox>.suduch_box:nth-child(1){
+    
+    border-bottom:1px solid #ddd;
+}
+
+
+.progress {
+	padding: 0;
+	margin: 0;
+	width:100%;
+	height:10px;
+	position:relative;
+    top:-10px;
+	float:left;
+	cursor:pointer;
+	background: #444; 
+}
+
+.progress span {
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	display:block;
+}
+
+.timeBar{
+	z-index:10;
+	width:0;
+	background: #3FB7FC;
+}
+
+.bufferBar{
+	z-index:5;
+	width:0;
+	background: #777;
+}
+
+.yuandian{
+    z-index: 15;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: aqua;
+    /*margin-left:20%;*/
+    
+}
+
+/* time and duration */
+.time{
+	width:15%;
+	float:right;
+	text-align:center;
+	font-size:11px;
+	line-height:12px;
+}
+
+
+.volume{
+	position:relative;
+    top: 10px;
+	cursor:pointer;
+	width:80px;
+	height:10px;
+	float:right;
+    margin-top: 20px;
+	margin-right:10px;
+	background-color: lightgrey;
+}
+
+.volumeBar{
+	display:block;
+    width: 70%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#2386E4;
+	z-index:10;
+}
+
+
+.loading, #init{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background:url(../images/video/loading.gif) no-repeat 50% 50%;
+	z-index:2;
+	/*display:none;*/
+}
+#init{
+	background:url(../images/video/bigplay.png) no-repeat 50% 50% !important;
+	cursor:pointer;
+}

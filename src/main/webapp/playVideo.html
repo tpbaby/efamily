@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>play music</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/playVideo.css">
+    <style type="text/css">
+       
+        @media screen and (max-width: 768px) {
+            header .nav_show ul{
+                font-size: 16px;
+                margin-left: -30px;
+            }
+            
+            /*.sudu, c, .sound2, .volume, .volumeBar{
+                display: none;
+            }*/
+            
+            .func_btn div.sudu{
+                display: none;
+            }
+
+            .func_btn div.sound2{
+                display: none;
+            }
+            
+            .func_btn div.volume{
+                display: none;
+            }
+            
+            .func_btn div.volumeBar{
+                display: none;
+            }
+        }
+        
+        @media screen and (min-width:768px) and (max-width:1200px) {
+        
+        }
+
+        @media screen and (min-width: 1200px) {
+            
+        }
+     
+        
+      
+    </style>
+</head>
+<body>
+   <!--头部导航-->
+    <header>
+        <div class="nav_show">
+            <ul >
+                <li>
+                   <span id="btn_back">返回</span>
+                </li>
+                <li>
+                    <span class="classname" id="videoname">课程xxx的名字</span>
+                </li>
+            </ul>
+        </div>
+    </header>
+    
+    <!--播放视频部分-->
+    <section>
+        <div class="video_box">
+            <video src="" id="player"></video>
+        </div>
+        
+        <div class="controls2"></div>
+        <div class="contrels">
+           <!--进度条-->
+            <div class="progress">
+                <span class="bufferBar"></span>
+                <span class="timeBar"></span>
+                <span class="yuandian"></span>
+            </div>
+
+            <div class="play_icon" id="video-btn">
+               
+            </div>
+            <div class="play_time">
+                <span id="current">00:00</span>
+                <span>/</span>
+                <span id="duration">00:00</span>
+            </div>
+            <div class="func_btn">
+               
+                   
+                    <!--全屏-->
+                    <div class="btnFS btn" title="Switch to full screen"></div>
+
+                    <!--速度-->
+                    <div class="btn sudu"><span>x1.0</span></div>
+                    <div class="sudubox">
+                        <div class="suduch_box btnx1">x2.0</div>
+                        <div class="suduch_box btnx2">x1.5</div>
+                    </div>
+                   
+                    <!--声音大小-->
+                    <div class="volume" title="Set volume">
+                        <span class="volumeBar"></span>
+                    </div>
+                   
+                    <!--声音开关-->
+			        <div class="sound sound2 btn" title="Mute/Unmute sound"></div>
+                
+            </div>
+        </div>
+        
+        <div class="loading"></div>
+    </section>
+
+</body>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/playVideo.js"></script>
+<script>
+    
+</script>
+</html>

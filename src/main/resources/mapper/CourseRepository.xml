@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.busyzero.efamily.repository.CourseRepository">
+    <select id="getCourseByCourseId" resultMap="courseMap">
+        SELECT c.course_id AS course_id,
+        c.course_name AS course_name,
+        c.course_type AS course_type,
+        c.course_author AS course_author,
+        c.course_img AS course_img,
+        v.video_id AS v_video_id,
+        v.video_name AS v_video_name,
+        v.video_link AS v_video_link,
+        v.course_id AS v_course_id
+        FROM course c
+        INNER JOIN video v ON c.course_id=v.course_id
+        WHERE c.course_id=#{courseId};
+    </select>
+    <resultMap id="courseMap" type="course">
+        <result property="courseId" column="course_id"/>
+        <result property="courseName"  column="course_name"/>
+        <result property="courseAuthor"  column="course_author"/>
+        <result property="courseImg" column="course_img"/>
+        <result property="courseType" column="course_type"/>
+        <collection property="videoList" ofType="video">
+            <result property="videoId" column="v_video_id"/>
+            <result property="videoName" column="v_video_name"/>
+            <result property="videoLink" column="v_video_link"/>
+            <result property="courseId" column="v_course_id"/>
+        </collection>
+    </resultMap>
+</mapper>

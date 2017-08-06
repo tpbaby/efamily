@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>music</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="target-densitydpi=375,width=470,user-scalable=no">
+    <!-- minimal-ui-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+    <meta http-equiv="description" content="This is my page">
+    <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/music.css" rel="stylesheet"> </head>
+
+<body>
+    <div class="wrapper">
+        <div class="s-skin-container s-isindex-wrap"></div>
+    </div>
+    <div class="operation">
+        <div class="row ">
+            <div class="col-md-3  col-md-offset-9 col-sm-3  col-sm-offset-9 visible-xs-4">
+                <div class="btn-group controller hidden-xs" role="group">
+                    <button type="button" class="btn btn-default " onclick="min.click();"> <span class="glyphicon glyphicon-minus" aria-hidden="true"></span> </button>
+                    <button type="button" class="btn btn-default max" aria-label="Left Align"> <span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span> </button>
+                    <button type="button" class="btn btn-default " aria-label="Left Align"> <span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span> </button>
+                </div>
+            </div>
+        </div>
+        <div class="row hidden-sm hidden-md hidden-lg mb_operation" style="padding-top: 5%;">
+            <div class="col-xs-3 col-xs-offset-1"> <span id="mb_change" class="glyphicon glyphicon-chevron-down"></span> </div>
+            <div class="col-xs-4 text-center">
+                <div class="row "> <span class="songname">演员</span> </div>
+            </div>
+            <div class="col-xs-3 text-right"> <span class="glyphicon glyphicon-option-horizontal"></span> </div>
+        </div>
+        <div style="width:200%;position:relative" class="changeable-pane">
+            <div class=" col-xs-6 hidden-sm hidden-md hidden-lg changepane">
+                <div class="row text-center">
+                    <div class="col-xs-12">
+                        <div class="row"><span class="music_info">一 </span> <span class="artist">薛之谦</span> <span class="music_info"> 一</span> </div>
+                        <div class="row choice">
+                            <button type="button" class="mb_small_btn btn btn-default  btn-xs">标准 <span class="glyphicon glyphicon-chevron-up" aria-hidden="true" style="font-size:14px"></span> </button>
+                            <button type="button" class="btn btn-default mb_small_btn  btn-xs">MV </button>
+                            <button type="button" class="btn btn-default mb_small_btn  btn-xs">音效 </button>
+                        </div>
+                    </div>
+                </div> <img src="images/music.jpg" alt="..." class="run middleimg img-circle img-responsive mb_im">
+                <div class="mblrc">
+                    <p style="text-align:center;color:white"></p>
+                </div>
+            </div>
+            <div class="col-xs-6  hidden-sm hidden-md hidden-lg changepane">
+                <div class="col-xs-12">
+                    <div class="lrc mb_lrc"> </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row  hidden-sm hidden-lg hidden-md">
+                <div class="col-xs-2 text-right"> <span class="currentTime "></span> </div>
+                <div class="col-xs-8">
+                    <div class="progress-wrapper ">
+                        <div id="progressSlider" class="pc-progress ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                            <!--进度条-->
+                            <div id="progress_bar" class="ui-slider-range ui-widget-header ui-slider-range-min"></div>
+                            <!--缓冲条-->
+                            <div class="ui-slider-progressbar ui-widget-header"></div>
+                            <!--滑动图标-->
+                            <a id="process_controller" class="ui-slider-handle ui-state-default ui-corner-all"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-2"> <span class="totalTime text-left"></span> </div>
+            </div>
+        </div>
+        <div class="container hidden-sm hidden-lg hidden-md">
+            <div class="row">
+                <ul class="play-btn">
+                    <div class="col-xs-4 ">
+                        <li class="prev">
+                            <a class="wg-button"></a>
+                        </li>
+                    </div>
+                    <div class="col-xs-4">
+                        <li class="play wg-button">
+                            <a class="start"></a>
+                        </li>
+                    </div>
+                    <div class="col-xs-4">
+                        <li class="next ">
+                            <a class="wg-button"></a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <div class="container hidden-sm hidden-lg hidden-md mb_bottom" style="margin-top: 4px;">
+            <div class="col-xs-3 text-center">
+                <a href="#" class="mb_bottom"> <span class="glyphicon glyphicon-heart"></span> </a>
+            </div>
+            <div class="col-xs-3 text-center">
+                <a class="download mb_bottom" href="http://yinyueshiting.baidu.com/data2/music/40a9c5afe335c5ae0b64104d42c13175/541721532/541721532.mp3?xcode=8b0b2c87a346d67d350a5c038dd045b5"> <span class="glyphicon glyphicon-download-alt"></span> </a>
+            </div>
+            <div class="col-xs-3 text-center">
+                <a href="#" class="mb_bottom"> <span class="glyphicon glyphicon-share"></span> </a>
+            </div>
+            <div class="col-xs-3 text-center">
+                <a href="#" class="mb_bottom"> <span class="glyphicon glyphicon-comment"></span> </a>
+            </div>
+        </div>
+    </div>
+    <div class="mb_controller hidden-sm hidden-lg hidden-md mb_bottom" style="display:none">
+        <div class="container ">
+            <div class="row">
+                <div class="col-xs-2">
+                    <div class="row hidden-sm hidden-md hidden-lg "> <img src="images/music.jpg" alt="..." class="underimg run img-circle img-responsive"> </div>
+                </div>
+                <div class="col-xs-6" style="padding-left: 25px;">
+                    <div class="row"> <span class="songname"></span> </div>
+                    <div class="row"> <span class="artist" style="    position: absolute;"></span> </div>
+                </div>
+                <div class="col-xs-2">
+                    <ul class="play-btn">
+                        <li class="play wg-button">
+                            <a class="start"></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xs-2" style="    top: 50%;
+                        position: absolute;
+                        right: 0;
+                        margin-top: -17px;"> <span class="glyphicon glyphicon-align-justify" style="font-size:34px"></span> </div>
+            </div>
+        </div>
+    </div>
+    <div class="content hidden-xs">
+        <div class="hidden-md hidden-lg hidden-xs">
+            <br>
+            <br>
+            <br>
+            <br> </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 ">
+                    <div class="row" style="margin: 0 auto"> <img src="images/music.jpg" alt="..." class="img-thumbnail middleimg"> </div>
+                    <div class="row">
+                        <div class="col-md-3 col-sm-3">
+                            <a>
+                                <h3><span class="glyphicon glyphicon-comment"></span></h3> </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <a>
+                                <h3><span class="glyphicon glyphicon-picture"></span></h3> </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <a>
+                                <h3><span class="glyphicon glyphicon-share"></span></h3> </a>
+                        </div>
+                        <div class="col-md-3 col-sm-3">
+                            <a>
+                                <h3><span class="glyphicon glyphicon-hd-video"></span></h3> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="col-md-12 col-sm-12">
+                    <div class="right_part">
+                        <div class="row music_wrapper"> <span class="songname">演员</span>
+                            <br> <span class="music_info">歌手 : </span> <span class="artist">薛之谦</span> <span class="music_info">  专辑 : </span><span class="album">初学者</span> </div>
+                        <div class="pc_lrc"> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="current_list " style="display:none">
+        <ul class="nav nav-tabs visible-xs-12" id="song_type">
+            <li role="presentation" class="active"><a href="#" type="1">新歌</a></li>
+            <li role="presentation"><a href="#" type="2">热歌</a></li>
+            <li role="presentation"><a href="#" type="11">摇滚</a></li>
+            <li role="presentation"><a href="#" type="12">爵士</a></li>
+            <li role="presentation"><a href="#" type="16">流行</a></li>
+            <li role="presentation"><a href="#" type="21">欧美金曲</a></li>
+            <li role="presentation"><a href="#" type="22">经典老歌</a></li>
+            <li role="presentation"><a href="#" type="23">情歌对唱</a></li>
+            <li role="presentation"><a href="#" type="24">影视金曲</a></li>
+            <li role="presentation"><a href="#" type="25">网络歌曲</a></li>
+        </ul>
+        <div class="table-responsive" style="height:500px">
+            <table class="table table-hover">
+                <thead class="hidden-xs">
+                    <tr>
+                        <th>歌曲</th>
+                        <th>歌手</th>
+                        <th>热度</th>
+                    </tr>
+                </thead>
+                <tbody id="song_list"></tbody>
+            </table>
+        </div>
+    </div>
+    <div class="music_operation hidden-xs">
+        <div class="row">
+            <div class="col-md-3 col-sm-3">
+                <div class="row" id="leftPannel">
+                    <ul class="play-btn">
+                        <div class="col-md-4  col-sm-4">
+                            <li class="prev">
+                                <a class="wg-button"></a>
+                            </li>
+                        </div>
+                        <div class="col-md-4  col-sm-4">
+                            <li class="play wg-button">
+                                <a class="start"></a>
+                            </li>
+                        </div>
+                        <div class="col-md-4  col-sm-4">
+                            <li class="next ">
+                                <a class="wg-button"></a>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6  col-sm-6">
+                <div class="row">
+                    <div class="col-md-2  col-sm-2">
+                        <div class="row"> <img class="underimg" src="images/music.jpg" style="   display: block;
+    width: 80px;
+    height: 60px;
+    opacity: 0.4;
+    margin: 0 auto;" alt="..."> </div>
+                        <div class="row"> <span id="change_View" class=" glyphicon glyphicon-chevron-down" style="    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    margin-left: -10px;"></span> </div>
+                    </div>
+                    <div class="col-md-10  col-sm-10">
+                        <div class="row">
+                            <div class="col-md-2  col-sm-2">
+                                <div class="row choice">
+                                    <!--aria-label="Left Align"-->
+                                    <button type="button" class="btn btn-default  btn-xs">标准 <span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span> </button>
+                                </div>
+                                <div class="row choice">
+                                    <button type="button" class="btn btn-default   btn-xs">音效 <span class="glyphicon glyphicon-chevron-up"></span> </button>
+                                </div>
+                            </div>
+                            <div class="col-md-10  col-sm-10">
+                                <div class="main-panel">
+                                    <div class="row choice"> <span class="music_info songname">演员</span> <span class="music_info">-</span> <span class="music_info artist">薛之谦</span> </div>
+                                    <div class="time"> <span class="currentTime" style="color:white">00:00</span> <span style="color:white">/</span> <span class="totalTime" style="color:white">00:00</span> </div>
+                                    <div class="row ">
+                                        <div class="time" id="timeWrap"> <span class="curTime"></span> <span class="split"></span> <span class="totalTime"></span> </div>
+                                        <div class="progress-wrapper ">
+                                            <div id="progressSlider" class="pc-progress ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                                                <!--进度条-->
+                                                <div id="progress_bar" class="ui-slider-range ui-widget-header ui-slider-range-min"></div>
+                                                <!--缓冲条-->
+                                                <div id="buffer_bar" class="ui-slider-progressbar ui-widget-header"></div>
+                                                <!--滑动图标-->
+                                                <a id="process_controller" class="ui-slider-handle ui-state-default ui-corner-all"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3  col-sm-3">
+                <div class="row" style="margin-top: 20px;">
+                    <div class="col-md-4 col-sm-4 ">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3 text-left">
+                                <a> <span class="glyphicon glyphicon-heart"></span> </a>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a class="download" href="#"> <span class="glyphicon glyphicon-download-alt"></span> </a>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a> <span class="glyphicon glyphicon-option-horizontal"></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 ">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <div class="voice_controller_wrapper" style="display:none">
+                                    <div class="voice-slider " aria-disabled="false">
+                                        <div class="voice-slider-range " style="width: 42%;"></div>
+                                        <a class="voice-slider-handle" href="#" style="left: 42%;"></a>
+                                    </div>
+                                </div>
+                                <a class="voice_controller">
+                                    <!--glyphicon glyphicon-volume-off--><span class="glyphicon glyphicon glyphicon-volume-down"></span> </a>
+                            </div>
+                            <div class="col-md-3 col-sm-3">
+                                <a> <span>词</span> </a>
+                            </div>
+                            <div class="col-md-3 col-sm-3 ">
+                                <a> <span class="glyphicon glyphicon-menu-hamburger"></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 ">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-3">
+                                <a> <span class="glyphicon glyphicon-music"></span> </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/music.js"></script>
+    <script src="js/music_controller.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

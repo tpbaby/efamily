@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>南京晓庄学院</title>
+   
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    
+    <!--********************必须放在下面，遮盖住bootstrap的样式-->
+    <link rel="stylesheet" href="css/style_xz.css">
+    
+    <style type="text/css">
+        .ttimg,.ppimg{
+            width: 190%;
+            height: 600px;
+        }
+        
+        
+        .ppimg{
+            margin-left: 280px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar  navbar-default navbar-fixed-top" role="navigation">
+            <div class="navigation">
+                       <!--给图片一个超链接-->
+                        <div class="logo">
+                           <!-- <a href="index_xz.html"><img class="logoimg" src="img/logo/timg.jpg"></a>-->
+                            <img src="images/main/index-xz/logo.png" class="logoimg1">
+                        </div>
+                    <div class="navbar-collapse collapse">
+                        <div class="menu">
+                            <ul class="nav nav-tabs " role="tablist">
+                                <li role="presentation"><a href="index_xz.html"  class="active">首&nbsp;&nbsp;页</a>
+                                </li>
+                                <li role="presentation"><a href="videolist.html">课程</a>
+                                </li>
+                                <li role="presentation"><a href="news.html">新闻</a>
+                                
+                                </li>
+                                <li role="presentation"><a href="twelve.html">星座</a>
+                                </li>
+                                <li role="presentation"><a href="loadmusic.html">音乐</a>
+                                </li>
+                                <li role="presentation"><a href="weather.html">天气</a>
+                                </li>
+                                <li role="presentation"><a href="idioms.html">成语接龙</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!--主页大图（滑动动画）-->
+    <section id="main-slider" class="no-margin">
+        <div class="carousel slide">      
+            <div class="carousel-inner">
+               <!--背景大图-->
+                <div class="item active" style="background-image: url(images/largebg/a.jpg)">
+                   <!--开始启用bootstrap里面的样式-->
+                    <div class="container">
+                        <div class="row slide-margin">
+                            <div class="col-sm-6">
+                                <div class="carousel-content">
+                                  
+                                    
+                                    <div class="animation animated-item-1">
+                                    
+                                        <h4 >南京晓庄学院 &nbsp;<span>e-family</span></h4>
+
+                                    </div>
+                                  
+                                    <p class="animation animated-item-2"><i>
+                                        欢迎参观本网站，这是我们的一个小网站</i>
+                                    </p>
+                                    
+                                    <!--<a class="btn-slide animation animated-item-3" href="#">Read More</a>-->
+                                    
+                                    <p class="njxg animation animated-item-3">-----efamily所有成员</p>
+                                </div>
+                            </div>
+
+                            <div class="col-sm-6 hidden-xs animation animated-item-4">
+                                <div class="slider-img">
+                                   
+                                   <!--图片需要换掉-->
+                                    <img src="images/slider/tt.png" class="img-responsive ttimg" >
+                                </div>
+                                <div class="slider-img">
+                                
+                                    <img src="images/slider/pp.png" class="img-responsive ppimg" >
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </section>
+    
+  <div class="lates">
+		<div class="container">
+			<div class="text-center">
+				<h2>我们有以下功能</h2>
+			</div>
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">
+				<img src="images/main/index-xz/chengyujielong.jpg" class="img-responsive imgpic"/>
+				<h3>成语接龙</h3>
+			</div>
+			
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+				<img src="images/main/index-xz/xingzuo.jpg" class="img-responsive imgpic"/>
+				<h3>星座</h3>
+			</div>
+			
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">				
+				<img src="images/main/index-xz/yinyue.jpg" class="img-responsive imgpic"/>
+				<h3>音乐</h3>
+			</div>
+			
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="300ms">				
+				<img src="images/main/index-xz/xinwen.jpg" class="img-responsive imgpic"/>
+				<h3>新闻</h3>
+			</div>
+			
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">				
+				<img src="images/main/index-xz/kecheng.jpg" class="img-responsive imgpic"/>
+				<h3>课程</h3>
+			</div>
+			
+			<div class="col-md-4 wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="900ms">				
+				<img src="images/main/index-xz/tianqi.jpg" class="img-responsive imgpic"/>
+				<h3>天气</h3>
+			</div>
+		</div>
+	</div>
+	
+	
+	<footer>
+        <div class="footstyle">
+            南京晓庄学院 efamily@efamily.com
+        </div>
+        
+    </footer>
+
+</body>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+<!--页面滚动加载特效脚本WOW.js-->
+<!--下方滚动的效果-->
+<script src="js/wow.min.js"></script>
+<script src="js/function_xz.js"></script>
+</html>

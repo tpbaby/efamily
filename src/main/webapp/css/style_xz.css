@@ -1,0 +1,305 @@
+
+
+/*========为bootstrap创建的字体，有版本http://fontawesome.io/从这里下载==========*/
+@import url('font-awesome.css');  
+/*===========齐全的css3动画库==============*/
+@import url('animate.css');
+  
+
+
+
+*{
+     font-family: "微软雅黑";
+}
+
+/*===============导航栏样式==========================*/
+        .navigation  {/*
+            background-color: black;*/
+            padding:0;
+            margin: 0px;
+            height: 70px;
+        }
+        
+        .menu {
+            font-size: 20px;
+            float: right;
+            margin-right: 50px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+        
+        .menu ul.nav-tabs li {
+            color: #fff;
+        }
+        
+        .nav{
+            z-index: 2;
+        }
+        
+        .nav-tabs {
+            /*===将bootstrap里面自带的下划线去掉=====*/
+            border-bottom: 0px;
+        }
+        
+        .nav-tabs > li {
+            z-index: 200;
+            margin-left: -20px;
+            float: left;
+            margin-bottom: 0;/*
+            background-color: black;*/
+        }
+        
+        .nav-tabs > li > a {
+            border-radius: 0;
+            color: #000;
+            padding: 30px;
+            height: 70px;
+        }
+        
+        .nav-tabs > li > a:hover {
+            text-decoration: underline;
+            color: #49cbfb;
+            border-color: #fff #fff #fff;
+            border-radius: 0;
+            background-color: white;
+            /*==导航栏动画，划过时停留0.3s==*/
+            transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
+        
+        .nav-tabs > li > a.active {
+            color: #49cbfb;
+            border-radius: 0;
+            transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+        }
+        
+        /*=======给整个缩小的环境设置背景==========*/
+        .collapse{
+            background-color: white;
+        }
+        
+        .logo{
+           float: left;
+            margin-left: 100px;
+            margin-top: 10px;
+        }
+        
+        .logoimg{
+            width: 70px;
+            height: 64px;
+            
+        }
+        
+        
+        .logoimg1{
+            position: relative;
+            left: -2px;
+            top: -2px;
+        }
+        
+.logo img{
+    width: 180px;
+    height: 60px;
+}
+
+
+
+        
+        
+/*===========================
+  slider
+============================ */
+#main-slider {
+	margin-top:40px;
+    position: relative;
+}
+
+
+.no-margin {
+  margin: 0;
+  padding: 0;
+}
+
+#main-slider .carousel .carousel-content {
+  margin-top: 140px;
+  margin-left: 180px;
+}
+
+#main-slider .carousel .slide-margin{
+  margin-top: 140px;
+}
+
+#main-slider .carousel h4 {
+  color: darkblue;
+  text-transform:uppercase;
+  font-size:23px;
+  font-weight:400;/*
+  font-style: italic;*/
+}
+
+#main-slider .carousel h4 span {
+  font-weight: 800;
+  font-size:35px;
+  color: #darkblue;
+  text-shadow: 3px 3px 3px grey;
+  font-style: normal;
+  font-family: "幼圆";
+}
+
+#main-slider .carousel h2 span spani {
+  color: #000;
+}
+
+#main-slider .carousel p {
+  color: #ddd;
+  font-size: 18px;
+  color: lightslategray;
+}
+
+#main-slider .carousel .njxg {
+   position: relative;
+    left: 180px;
+    font-style: italic;
+}
+
+#main-slider .carousel .slider-img{
+  text-align: right;
+  position: absolute;
+}
+
+
+#main-slider .carousel .item {
+  background-position: 50%;
+    /*==不平铺，覆盖全部=*/
+  background-repeat: no-repeat;
+  background-size: cover;
+  left: 0 !important;
+  opacity: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  display: block !important;
+  height: 730px;
+  -webkit-transition: opacity ease-in-out 500ms;
+  -moz-transition: opacity ease-in-out 500ms;
+  -o-transition: opacity ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms;
+}
+
+#main-slider .carousel .item:first-child {
+  top: auto;
+  position: relative;
+}
+
+        
+/*====================关键代码从这里开始=====================*/
+#main-slider .carousel .item.active {
+  opacity: 1;
+  -webkit-transition: opacity ease-in-out 500ms;
+  -moz-transition: opacity ease-in-out 500ms;
+  -o-transition: opacity ease-in-out 500ms;
+  transition: opacity ease-in-out 500ms;
+  z-index: 1;
+}
+
+#main-slider .active .animation .animated-item-1 {
+    
+    /*============从下往上的滑动==================*/
+  -webkit-animation: fadeInUp 300ms linear 300ms both;
+  -moz-animation: fadeInUp 300ms linear 300ms both;
+  -o-animation: fadeInUp 300ms linear 300ms both;
+  -ms-animation: fadeInUp 300ms linear 300ms both;
+  animation: fadeInUp 300ms linear 300ms both;
+}
+
+#main-slider .active .animation.animated-item-1 {
+  -webkit-animation: fadeInUp 300ms linear 300ms both;
+  -moz-animation: fadeInUp 300ms linear 300ms both;
+  -o-animation: fadeInUp 300ms linear 300ms both;
+  -ms-animation: fadeInUp 300ms linear 300ms both;
+  animation: fadeInUp 300ms linear 300ms both;
+}
+
+#main-slider .active .animation.animated-item-2 {
+  -webkit-animation: fadeInUp 300ms linear 600ms both;
+  -moz-animation: fadeInUp 300ms linear 600ms both;
+  -o-animation: fadeInUp 300ms linear 600ms both;
+  -ms-animation: fadeInUp 300ms linear 600ms both;
+  animation: fadeInUp 300ms linear 600ms both;
+}
+
+#main-slider .active .animation.animated-item-3 {
+  -webkit-animation: fadeInUp 300ms linear 900ms both;
+  -moz-animation: fadeInUp 300ms linear 900ms both;
+  -o-animation: fadeInUp 300ms linear 900ms both;
+  -ms-animation: fadeInUp 300ms linear 900ms both;
+  animation: fadeInUp 300ms linear 900ms both;
+}
+
+#main-slider .active .animation.animated-item-4 {
+  -webkit-animation: fadeInUp 300ms linear 1200ms both;
+  -moz-animation: fadeInUp 300ms linear 1200ms both;
+  -o-animation: fadeInUp 300ms linear 1200ms both;
+  -ms-animation: fadeInUp 300ms linear 1200ms both;
+  animation: fadeInUp 300ms linear 1200ms both;
+}
+
+/*下方部门介绍*/
+  
+
+        .text-center h2 {
+            margin-bottom:30px;
+        }
+
+        .text-center p {
+            margin-bottom:50px;
+            color:#333;
+        }
+
+        .lates {
+            padding:50px;
+        }
+
+        .lates h2 {
+            font-size:20px;
+            font-weight:600;
+            color:#333;
+        }
+
+        .lates img {
+            margin-top:30px;
+            border-radius:5px;
+        }
+
+.lates h3{
+    text-align: center;
+}
+
+        
+        .imgpic{
+            width: 400px;
+            height: 230px;
+        }
+
+
+
+
+
+/*脚部*/
+footer{
+    margin-top: 50px;
+    height: 50px;
+    background-color: #7a7a7a;
+    text-align: center;
+}
+
+.footstyle{
+    position: relative;
+    top: 15px;
+    color: white;
+}

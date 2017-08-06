@@ -1,0 +1,267 @@
+body{
+    background-color:#f7f7f7;
+}
+.color-white{
+    color: #ffffff;
+}
+.color-gray-white{
+    background-color:#f7f7f7;
+}
+.color-light-gray{
+    color: #777777;
+}
+.color-light-green{
+    background-color: #CCFFFF;
+}
+.bg-lightgray{
+    background-color: lightgray;
+}
+.no-margin-padding{
+    margin: 0;
+    padding: 0;
+}
+.margin10-light-gray{
+    width: 100%;
+    height: 5px;
+    background-color: lightgray;
+}
+.margin-top-10{
+    margin-top: 10px;
+}
+.margin-top-60{
+    margin-top: 60px;
+}
+
+.no-border-radius{
+    border-radius: 0;
+}
+
+.model-alpha {
+    opacity:0.85;
+    filter:alpha(opacity=85); /* 针对 IE8 以及更早的版本 */
+}
+.border-bottom{
+    padding-bottom:8px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.float-right{
+    float: right;
+    margin:20px;
+    margin-bottom: 50px;
+}
+.float-right-no{
+    line-height: 50px;
+    text-align: center;
+    float: right;
+}
+
+.icon-center{
+    text-align: center;
+    line-height: 50px;
+}
+
+/*头部*/
+header{
+    line-height: 50px;
+    height: 50px;
+    background-color:#6666CC;
+}
+
+.floating-button{
+    background-color: #6666CC;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow:1px 1px 1px 1px lightgray;
+}
+
+.content-header{
+    width:100%;
+    height:250px;
+    background-color: #6666CC;
+    margin-left: -15px;
+    /*padding-right: 40px*!;*/
+}
+.content-photo{
+    height: 50px;
+    margin-left:50px;
+    padding-top: 170px;
+}
+
+.icon-photo{
+    width:50px;
+    height:50px;
+    border-radius: 25px;
+    border:5px solid #ffffff;
+}
+.icon-text{
+    margin-left: 20px;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.fixed-top{
+    position: fixed;
+    top:0px;
+}
+.fixed-bottom{
+    position: fixed;
+    bottom:0;
+}
+.line-height-50{
+    height: 50px;
+}
+
+.icon-inline{
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+}
+
+.line-gap{
+    margin-left: -1px;
+    width: 1px;
+    height: 50px;
+    background-color: lightgray;
+    z-index: 1;
+}
+.text-little{
+    font-size: 0.75em;
+    color: lightgray;
+}
+
+.icon-to-right{
+    color: #777;
+    background-color: #ffffff;
+}
+
+.icon-on-right{
+    background-color: #ffffff;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    padding:0;
+}
+
+.icon-on-right img{
+    width: 24px;
+    height: 24px;
+}
+.block-height100{
+    height: 100px;
+}
+
+
+/*contacts*/
+.contact-container{
+    margin-top: 50px;
+    width: 100%;
+}
+.contact-card{
+    width:100%;
+    height: 50px;
+    color: #000;
+    font-size: 1.3em;
+    line-height: 50px;
+    vertical-align: middle;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5px;
+}
+.me-text-color{
+    color: #000000;
+}
+.divider-line20{
+    height: 20px;
+    border-bottom: 1px solid lightgray;
+}
+/*增加或者修改*/
+.gray-line-on-top{
+   border-top: 1px solid  #777777;
+}
+
+.margin-vertical10{
+    margin:10px 0;
+}
+
+.fixed-header{
+    width: 100%;
+    background-color: #6666CC;
+    position: fixed;
+    top:0px;
+}
+.btn-cancel{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 50px;
+    height: 30px;
+    color: #fff;
+    background-color: #6666CC;
+    border: 1px solid #f7f7f7;
+    border-radius: 5px;
+}
+
+.btn-ok{
+    width:40px;
+    height: 30px;
+    background: #2aabd2;
+    border-radius: 2px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.header-photo{
+    width:100%;
+    height: 100px;
+}
+.header-photo{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border:1px solid lightgray;
+    margin: 20px auto;
+}
+.edit-group{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width:100%;
+    background-color: #ffffff;
+    border-top:1px solid lightgray;
+    border-bottom:1px solid lightgray;
+}
+.no-border-bottom{
+    border-bottom:none;
+}
+.edit-group-item{
+    outline: none;
+    border: none;
+    height: 50px;
+    width: 100%;
+    font-size: 1em;
+    padding-left: 16px;
+    padding-right:16px;
+    border-bottom:0.5px solid lightgray;
+}
+.btn-another-fields{
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    background-color: #ffffff;
+    outline: none;
+    border:none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

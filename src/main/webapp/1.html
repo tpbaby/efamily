@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <style>
+        header{
+            margin: 0 auto;
+            width: 90%;
+            height: 40px;
+            position: fixed;
+            /*background-color: #6666cc;*/
+        }
+        
+        .nav-position{
+         /*   position: fixed;*/
+            z-index: 20;
+        }
+
+
+        .mini-title{
+            display: inline-block;
+            color: white;
+            font-family: "幼圆";
+        }
+
+        /*返回按钮*/
+        .btn-smallicon{
+            background-color: transparent;
+            border-radius: 8px;
+        }
+        #btn-back{
+            border:none;
+            position: absolute;
+            left: 0;
+            top: 5px;
+        }
+        #btn-back:hover{
+            background-color: transparent;
+        }
+        .btn-smallicon span{
+            font-size: 20px;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+   <header>
+       <ul class="nav nav-tabs nav-position">
+           <li role="presentation" class="active">
+               <a href="#">课程</a>
+           </li>
+           <li role="presentation" >
+               <a href="#">新闻</a>
+           </li>
+           <li role="presentation">
+                 <a href="#">音乐</a>
+           </li>
+           <li role="presentation" >
+               <a href="#">电影</a>
+           </li>
+           <li role="presentation" >
+               <a href="#">天气</a>
+           </li>
+           
+           <li role="presentation" >
+               <a href="#">星座</a>
+           </li>
+           <li role="presentation" >
+               <a href="#">游戏</a>
+           </li>
+       </ul>
+       
+       
+       <div class="mini-nav">
+            <!-- 返回按钮 -->
+            <a href="main.html">
+               <button type="button" class="btn btn-default btn-smallicon" id="btn-back" aria-label="Left Align">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                </button> 
+            </a>
+            <div class="mini-title">星座运势</div>
+       </div>
+   </header>
+</body>
+</html>

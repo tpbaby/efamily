@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>新闻页面</title>
+    <link >
+    <link type="text/css" rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <link type="text/css" rel="stylesheet" href="css/view_news.css">
+    <style>
+        .btn-smallicon{
+            color: white;
+            margin-top:10px;
+            margin-left: -5px;
+            padding-left: -5px;
+            margin-left: -5px;
+        }
+    </style>
+</head>
+<body>
+<div class="navbar-fixed-top nav-menu">
+    <div id="menu-scroll"  class="text-center row margin-10">
+        <span class="col-xs-1 glyphicon glyphicon-chevron-left btn-smallicon" id="btn-back" aria-hidden="true"></span>
+        <div class="menus col-xs-8">
+            <ul class="menus-scroll list-unstyled">
+                <li onclick="requestXMl(Resources.politics)">时政</li>
+                <li onclick="requestXMl(Resources.world)">国际</li>
+                <li onclick="requestXMl(Resources.local)">地方</li>
+                <li onclick="requestXMl(Resources.mil)">军事</li>
+                <li onclick="requestXMl(Resources.finance)">金融</li>
+                <li onclick="requestXMl(Resources.tw)">两岸</li>
+                <li onclick="requestXMl(Resources.ent)">娱乐</li>
+                <li onclick="requestXMl(Resources.legal)">法制</li>
+                <li onclick="requestXMl(Resources.edu)">教育</li>
+                <li onclick="requestXMl(Resources.sports)">体育</li>
+                <li onclick="requestXMl(Resources.auto)">汽车</li>
+                <li onclick="requestXMl(Resources.tech)">科技</li>
+            </ul>
+        </div>
+        <span class="glyphicon glyphicon-menu-down col-xs-2 icon-down"  onclick="showMenuBlock()"></span>
+    </div>
+
+    <div id="menu-block" class="navbar-not-scroll margin-10 text-white">
+        <div class="row line-height-50">
+            <span class="col-xs-10 text-left-center">切换栏目</span>
+            <span class="glyphicon glyphicon-menu-up  col-xs-2 icon-down" aria-hidden="true" onclick="showMenuBlock()"></span>
+        </div>
+        <ul class="list-unstyled menus-block">
+            <li onclick="requestXMl(Resources.politics)">时政</li>
+            <li onclick="requestXMl(Resources.world)">国际</li>
+            <li onclick="requestXMl(Resources.local)">地方</li>
+            <li onclick="requestXMl(Resources.mil)">军事</li>
+            <li onclick="requestXMl(Resources.finance)">金融</li>
+            <li onclick="requestXMl(Resources.tw)">两岸</li>
+            <li onclick="requestXMl(Resources.ent)">娱乐</li>
+            <li onclick="requestXMl(Resources.legal)">法制</li>
+            <li onclick="requestXMl(Resources.edu)">教育</li>
+            <li onclick="requestXMl(Resources.sports)">体育</li>
+            <li onclick="requestXMl(Resources.auto)">汽车</li>
+            <li onclick="requestXMl(Resources.tech)">科技</li>
+        </ul>
+    </div>
+</div>
+<div class="news-content row">
+    <ul id="news-content-list" class="col-xs-12 col-md-6 col-md-offset-3">
+
+    </ul>
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+<script src="js/view_news.js"></script>
+</body>
+</html>

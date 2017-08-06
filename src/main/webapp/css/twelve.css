@@ -1,0 +1,270 @@
+/*==================================
+                头部
+=====================================*/    
+
+/*===================================
+十二个星座排版
+=============================*/
+article{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.article-bgimg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+   /* background: url('../img/twelve/bg_twelve.jpg') no-repeat 100% 100%;*/
+    animation-name: changebg;
+    animation-duration: 10s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+      /*==规定动画无限次播放*/
+      animation-iteration-count:infinite;
+}
+
+.twelve-bg{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    z-index: 10;
+}
+
+
+.twelve-content-box{
+    padding-top: 50px;
+    width: 100%;
+    height: auto;
+}
+
+.twelve-items-box{
+    width: 24%;
+    height: auto;
+    padding: 20px;
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.twelve-items-box img{
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+}
+
+.twelve-items-box img:hover{
+    box-shadow: -2px 0px 6px white,
+                0px 0px 0px white,
+                0px 4px 8px white,
+                2px  0px 6px white;;
+}
+
+.items-showbox{
+    width: 88%;
+    height: auto;
+    padding: 7px;
+    border-radius: 5px;
+    text-align: center;
+    z-index: 100;
+    background-color: black;
+    opacity: 0.5;
+    color: white;
+    margin-left: -2px;
+    position: absolute;
+    bottom: 18px;
+    display: none;
+}
+
+/*===============================================
+蒙版信息
+============================================*/
+.twelve-more-bg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: black;
+    z-index: 200;
+    opacity: 0.6;
+    display: none;
+}       
+
+.twelve-more-msg{
+    width: 80%;
+    height: 650px;
+    margin: 0 auto;
+    background-color: white;
+    position: fixed;
+    top: 0px;
+    left: 10%;
+    z-index: 201;
+    margin-top: 60px;
+    text-align: center;
+    display: none;
+}
+
+/*关闭蒙版按钮*/
+.more-close{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ddd;
+    float: right;
+    text-align: center;
+    line-height: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.more-title{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: pink;
+    text-shadow: 1px 1px 1px #ddd;
+}
+
+.more-info{
+    clear: both;
+    width: 100%;
+/*    margin-top: 40px;*/
+    height: auto;
+    /*background-color: #ddd;*/
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.more-info img{
+    width: 35%;
+    position: absolute;
+    left: 5%;
+    top: 8%;
+}
+
+.more-info-lucy{
+    width: 50%;
+    height: auto;
+   /* border: 1px solid #ddd;*/
+    position: absolute;
+    right: 5%;
+    text-align: left;
+    font-size: 16px;
+}
+
+.more-items{
+    padding:10px;
+}
+
+.items-msg{
+    background-color: lightpink;
+    color: white;
+    border-radius: 5px;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+
+
+/*=======================
+    animation
+=========================*/
+@keyframes changebg{
+    0% {
+        background-image: url('../images/twelve/bg_twelve.jpg');
+    }
+    60% {
+        background-image: url('../images/twelve/bg2.jpg');
+    }
+    100% {
+        background-image: url('../images/twelve/bg3.jpg');
+    }
+}
+
+
+        
+/**
+    媒体查询
+*/
+@media screen and (max-width: 768px) {
+    
+    .mini-nav{
+        background-color:  #5dabf0;
+        height: 40px;
+        position: fixed;
+        width: 100%;
+        z-index: 2000;
+        display: flex;
+        justify-content: center;
+        align-items: center;/*
+        display: none;*/
+    }
+    
+    
+    /*  外面的大盒子  */
+    .twelve-content-box{
+        padding-top: 10px;
+    }
+    
+    
+    /*手机端，全屏铺满*/
+    .twelve-bg{
+        width: 100%;
+    }
+
+    .nav-position{
+        display: none;
+    }
+
+    /*一行占两个*/
+    .twelve-items-box{
+        width: 49%;
+    }
+
+    .twelve-more-msg{
+        width: 100%;
+        height: 600px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+    }
+
+    .more-items{
+        padding:5px;
+    }
+
+    .more-info-lucy{
+        font-size: 12px;
+    }
+
+   /* .items-showbox{
+        display: block;
+    }*/
+
+    /*蒙版在手机端距离顶端的距离*/
+    .twelve-more-msg{
+        margin-top: 40px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .twelve-bg{
+        width: 90%;
+    }
+
+    .twelve-items-box{
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+        
+        
